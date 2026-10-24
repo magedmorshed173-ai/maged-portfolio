@@ -9,7 +9,7 @@ const SITE_CONFIG = {
     "مصمّم تجربة مستخدم",
     "شغوف بالتفاصيل",
   ],
-  email: "magedmorshed@example.com", // بريدك الإلكتروني ← ضع بريدك الحقيقي
+  email: "Magedmorshed173@gmail.com",// بريدك الإلكتروني
   phone: "+9665XXXXXXXX",            // رقم جوالك (بدون مسافات)
   phoneDisplay: "+966 5X XXX XXXX",  // رقمك كما سيظهر للزوار
   location: "الرياض، السعودية",       // مدينتك
