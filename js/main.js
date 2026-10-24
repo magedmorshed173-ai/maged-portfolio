@@ -10,14 +10,14 @@ const SITE_CONFIG = {
     "شغوف بالتفاصيل",
   ],
   email: "Magedmorshed173@gmail.com",// بريدك الإلكتروني
-  phone: "+9665XXXXXXXX",            // رقم جوالك (بدون مسافات)
-  phoneDisplay: "+966 5X XXX XXXX",  // رقمك كما سيظهر للزوار
-  location: "الرياض، السعودية",       // مدينتك
+  phone: "",                         // رقم جوالك (فارغ = تُخفى البطاقة)
+  phoneDisplay: "",                  // رقمك كما يظهر للزوار
+  location: "صنعاء، اليمن",           // مدينتك
   socials: {                         // روابط التواصل (اتركها "" لإخفائها)
-    github:   "https://github.com/username",
-    linkedin: "https://linkedin.com/in/username",
-    x:        "https://x.com/username",
-    whatsapp: "https://wa.me/9665XXXXXXXX",
+    github:   "https://github.com/magedmorshed173-ai",
+    linkedin: "",                      // فارغ = لا يظهر
+    x:        "",                      // فارغ = لا يظهر
+    whatsapp: "",                      // فارغ = لا يظهر
     telegram: "",
   },
 };
@@ -62,11 +62,17 @@ function applyConfig() {
     phone: `tel:${SITE_CONFIG.phone}`,
   };
 
-  // روابط ثابتة (بريد / جوال)
+  // روابط ثابتة (بريد / جوال / GitHub)
   document.querySelectorAll("[data-config-link]").forEach((el) => {
     const href = linkMap[el.dataset.configLink];
     if (href) el.href = href;
   });
+
+  // إخفاء بطاقات التواصل التي لا بيانات حقيقية لها
+  if (!SITE_CONFIG.phone)
+    document.querySelectorAll('[data-config-link="phone"]').forEach((el) => (el.style.display = "none"));
+  if (!SITE_CONFIG.email)
+    document.querySelectorAll('[data-config-link="email"]').forEach((el) => (el.style.display = "none"));
 
   // أيقونات التواصل في الهيرو والتذييل
   ["heroSocials", "footerSocials"].forEach((id) => {
