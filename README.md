@@ -1,4 +1,4 @@
-# 🌐 موقعي التعريفي | My Portfolio
+# 🌐 Maged Morshed — الموقع التعريفي
 
 > موقع تعريفي شخصي عربي بالكامل — تصميم حديث، سريع، ومتجاوب مع كل الأجهزة.
 > مستضاف مجانًا عبر **GitHub Pages** مع نشر تلقائي عند كل تحديث.
@@ -25,7 +25,7 @@
 ## 🗂️ هيكل المشروع
 
 ```
-my-website/
+maged-portfolio/
 ├── index.html              # الصفحة الرئيسية
 ├── css/
 │   └── style.css           # التنسيقات (ألوان، حركات، استجابة)
@@ -45,7 +45,7 @@ my-website/
 ```js
 const SITE_CONFIG = {
   brand: "موقعي",              // اسم الموقع في الشعار
-  name: "محمد أحمد",           // ← ضع اسمك هنا
+  name: "Maged Morshed",      // اسمك
   roles: ["مطوّر واجهات..."],  // ← مسمياتك المهنية
   email: "you@example.com",    // ← بريدك
   socials: { github: "...", linkedin: "..." },  // ← روابطك
@@ -64,7 +64,7 @@ const SITE_CONFIG = {
 1. اذهب إلى **Settings ← Pages** في المستودع
 2. اختر المصدر: **GitHub Actions**
 3. كل تحديث للفرع `main` سيُنشر فورًا على:
-   `https://USERNAME.github.io/my-website/`
+   `https://USERNAME.github.io/maged-portfolio/`
 
 ## 🖥️ التشغيل محليًا
 
