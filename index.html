@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع تعريفي شخصي — مطوّر ومصمّم واجهات. أعمالي، مهاراتي، وطرق التواصل معي.">
+  <meta name="theme-color" content="#0b1020">
+  <title>الرئيسية | موقعي التعريفي</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- شريط التقدم أعلى الصفحة -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ═══ القائمة العلوية: تظهر فوق كل الصفحات ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text" data-config="brand">موقعي</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">عنّي</a>
+        <a href="#skills" class="nav-link">مهاراتي</a>
+        <a href="#projects" class="nav-link">أعمالي</a>
+        <a href="#contact" class="nav-link">تواصل معي</a>
+        <a href="#" class="nav-link nav-github" data-config-link="github" target="_blank" rel="noopener" title="حسابي على GitHub">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ القسم الرئيسي Hero ═══ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="hero-badge reveal">
+            <i class="fa-solid fa-circle check-dot"></i>
+            متاح لمشاريع جديدة
+          </span>
+          <p class="hero-greeting reveal">أهلًا بك في موقعي 👋</p>
+          <h1 class="hero-title reveal">
+            أنا <span class="gradient-text" data-config="name">محمد أحمد</span>
+          </h1>
+          <h2 class="hero-subtitle reveal">
+            <span id="typed" aria-live="polite"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc reveal">
+            أبني تجارب رقمية أنيقة وسريعة تجمع بين الجمال الهندسي وسهولة الاستخدام،
+            مع اهتمام دقيق بالتفاصيل وأداء عالٍ في كل صفحة.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> شاهد أعمالي
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i> تواصل معي
+            </a>
+          </div>
+          <div class="hero-socials reveal" id="heroSocials">
+            <!-- تُملأ الروابط تلقائيًا من الإعدادات -->
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">profile.js</span>
+            </div>
+            <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  الاسم: <span class="c-string">"<span data-config="name">محمد أحمد</span>"</span>,
+  الدور: <span class="c-string">"مطوّر واجهات أمامية"</span>,
+  الشغف: [<span class="c-string">"التصميم"</span>, <span class="c-string">"الكود"</span>, <span class="c-string">"التفاصيل"</span>],
+  <span class="c-fn">ابنِ_فكرة</span>: (فكرة) <span class="c-keyword">=&gt;</span> {
+    <span class="c-keyword">return</span> فكرة + <span class="c-string">" ✨"</span>;
+  }
+};</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="انزل للأسفل">
+        <i class="fa-solid fa-chevron-down bounce"></i>
+      </a>
+    </section>
+
+    <!-- ═══ قسم عنّي ═══ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">تعريف سريع</span>
+          <h2 class="section-title">عنّـي</h2>
+          <p class="section-line"></p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h3>مطوّر يهوى تحويل الأفكار إلى منتجات رقمية</h3>
+            <p>
+              عملت على بناء مواقع وتطبيقات ويب لأفراد وشركات ناشئة، من صفحة الهبوط
+              الأولى وصولًا إلى لوحات تحكم متكاملة. أؤمن أن أفضل المنتجات تُبنى حين
+              يجتمع التصميم الجميل مع كود نظيف قابل للصيانة والتطوير.
+            </p>
+            <p>
+              أتابع باستمرار أحدث التقنيات والمعايير في عالم الويب، وأحرص على تجربة
+              مستخدم سلسة على كل الأجهزة، مع سرعة تحميل وإتاحة وصول للجميع.
+            </p>
+            <ul class="about-points">
+              <li><i class="fa-solid fa-check"></i> تصميم متجاوب يعمل على كل الشاشات</li>
+              <li><i class="fa-solid fa-check"></i> كود نظيف منظّم وفق أفضل الممارسات</li>
+              <li><i class="fa-solid fa-check"></i> اهتمام بالأداء وسرعة التحميل</li>
+              <li><i class="fa-solid fa-check"></i> دعم فني وتحديثات مستمرة بعد التسليم</li>
+            </ul>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">سنوات خبرة</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">مشروع مكتمل</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-users"></i>
+              <span class="stat-num" data-count="25">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">عميل سعيد</span>
+            </div>
+            <div class="stat-card">
+              <i class="fa-solid fa-medal"></i>
+              <span class="stat-num" data-count="12">0</span><span class="stat-plus"></span>
+              <span class="stat-label">شهادة مهنية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ قسم المهارات ═══ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">ماذا أُتقن</span>
+          <h2 class="section-title">مهاراتـي</h2>
+          <p class="section-line"></p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <p>هيكل دلالي سليم ومتوافق مع معايير الويب ومحركات البحث.</p>
+            <div class="skill-bar"><span style="--w:95%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <p>تنسيقات حديثة، حركات سلسة، وتصميم متجاوب بلا أعطال.</p>
+            <div class="skill-bar"><span style="--w:92%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <p>تفاعلات ذكية وواجهات ديناميكية بأحدث مواصفات ES2024.</p>
+            <div class="skill-bar"><span style="--w:88%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
+            <h3>React</h3>
+            <p>مكوّنات قابلة لإعادة الاستخدام وإدارة حالة احترافية.</p>
+            <div class="skill-bar"><span style="--w:85%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon git"><i class="fa-brands fa-git-alt"></i></div>
+            <h3>Git & GitHub</h3>
+            <p>تحكم كامل بنسخ الكود وسير عمل احترافي عبر الفروع.</p>
+            <div class="skill-bar"><span style="--w:90%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon ui"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>UI / UX</h3>
+            <p>واجهات مبنية على فهم السلوك ومبادئ التصميم الحديثة.</p>
+            <div class="skill-bar"><span style="--w:87%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ قسم الأعمال ═══ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">أحدث الأعمال</span>
+          <h2 class="section-title">أعمـالي</h2>
+          <p class="section-line"></p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb t-1">
+              <i class="fa-solid fa-store"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>متجر إلكتروني متكامل</h3>
+              <p>واجهة متجر عربية سريعة مع سلة مشتريات وفلترة ذكية للمنتجات.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb t-2">
+              <i class="fa-solid fa-chart-line"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>لوحة تحكم إحصائية</h3>
+              <p>عرض البيانات برسوم بيانية تفاعلية وتقارير فورية قابلة للتخصيص.</p>
+              <div class="project-tags"><span>React</span><span>Charts</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb t-3">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>تطبيق مهام يومية</h3>
+              <p>إدارة المهام بواجهة بسيطة مع حفظ تلقائي ووضع ليلي مريح للعين.</p>
+              <div class="project-tags"><span>PWA</span><span>JS</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb t-4">
+              <i class="fa-solid fa-utensils"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>موقع مطعم تفاعلي</h3>
+              <p>قائمة طعام رقمية مع حجز طاولات وعرض صور جذاب للوجبات.</p>
+              <div class="project-tags"><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb t-5">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>منصة تعليمية</h3>
+              <p>دورات مصنّفة بمستويات مع تتبع تقدّم الطالب واختبارات قصيرة.</p>
+              <div class="project-tags"><span>React</span><span>API</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb t-6">
+              <i class="fa-solid fa-cloud-sun"></i>
+              <div class="project-links">
+                <a href="#" title="معاينة"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" title="الكود"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>تطبيق حالة الطقس</h3>
+              <p>تنبؤات مباشرة بموقعك الجغرافي وواجهة تتغير مع حالات الجو.</p>
+              <div class="project-tags"><span>API</span><span>JS</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ قسم التواصل ═══ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">لا تتردد</span>
+          <h2 class="section-title">تواصـل معـي</h2>
+          <p class="section-line"></p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>لنصنع شيئًا رائعًا معًا</h3>
+            <p>
+              متاح للاستشارات والمشاريع الجديدة. أرسل لي رسالة وسأرد عليك
+              في أسرع وقت ممكن — عادة خلال 24 ساعة.
+            </p>
+            <div class="contact-cards">
+              <a class="contact-card" data-config-link="email">
+                <i class="fa-regular fa-envelope"></i>
+                <div><span>البريد الإلكتروني</span><strong data-config="email">you@example.com</strong></div>
+              </a>
+              <a class="contact-card" data-config-link="phone">
+                <i class="fa-solid fa-phone"></i>
+                <div><span>رقم الجوال</span><strong data-config="phone">+966 5X XXX XXXX</strong></div>
+              </a>
+              <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div><span>الموقع</span><strong data-config="location">الرياض، السعودية</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fName">الاسم</label>
+                <input id="fName" type="text" placeholder="اكتب اسمك" required>
+              </div>
+              <div class="form-group">
+                <label for="fEmail">البريد الإلكتروني</label>
+                <input id="fEmail" type="email" placeholder="example@mail.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fSubject">الموضوع</label>
+              <input id="fSubject" type="text" placeholder="بماذا تريد المساعدة؟" required>
+            </div>
+            <div class="form-group">
+              <label for="fMessage">الرسالة</label>
+              <textarea id="fMessage" rows="5" placeholder="اكتب تفاصيل مشروعك أو استفسارك..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-regular fa-paper-plane"></i> إرسال الرسالة
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ التذييل ═══ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="logo-mark">&lt;/&gt;</span> <span data-config="brand">موقعي</span></a>
+        <p>موقع تعريفي شخصي — مبني بأحدث تقنيات الويب ومستضاف على GitHub Pages.</p>
+      </div>
+      <div class="footer-links">
+        <h4>روابط سريعة</h4>
+        <a href="#about">عنّي</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">أعمالي</a>
+        <a href="#contact">تواصل معي</a>
+      </div>
+      <div class="footer-socials" id="footerSocials"></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> <span data-config="name">محمد أحمد</span> — جميع الحقوق محفوظة.</p>
+      <p class="made-with">صُنع بـ <i class="fa-solid fa-heart"></i> و <i class="fa-brands fa-github"></i></p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
