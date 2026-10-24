@@ -1,4 +1,4 @@
-name: نشر الموقع على GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:

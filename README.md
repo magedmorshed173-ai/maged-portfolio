@@ -1,86 +1,89 @@
-# 🌐 Maged Morshed — الموقع التعريفي
+# 🌐 Maged Morshed — Portfolio
 
-> موقع تعريفي شخصي عربي بالكامل — تصميم حديث، سريع، ومتجاوب مع كل الأجهزة.
-> مستضاف مجانًا عبر **GitHub Pages** مع نشر تلقائي عند كل تحديث.
+> A fully responsive personal portfolio website — modern design, smooth animations,
+> and a native Arabic RTL experience. Hosted free on **GitHub Pages** with
+> automatic deployment on every update.
 
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-مفعّل-success?logo=github)]()
-[![License: MIT](https://img.shields.io/badge/الرخصة-MIT-blue.svg)](LICENSE)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?logo=github)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)]()
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)]()
 
 ---
 
-## ✨ المميزات
+## ✨ Features
 
-- 🎨 **تصميم عربي حديث (RTL)** بخطوط Cairo و Tajawal الأنيقة
-- 🌙 **وضع ليلي / نهاري** مع حفظ تفضيل الزائر تلقائيًا
-- ⌨️ **تأثير كتابة ديناميكي** للمسميات المهنية
-- 📊 **عدّادات إحصائية متحركة** وحركات ظهور سلسة عند التمرير
-- 📱 **متجاوب 100%** — يعمل بشكل مثالي على الجوال والتابلت والحاسب
-- 🚀 **بدون مكتبات ثقيلة** — HTML و CSS و JS خالص، سرعة تحميل فائقة
-- 🧩 **إعدادات مركزية** — عدّل اسمك وروابطك من مكان واحد (`js/main.js`)
-- 🔄 **نشر تلقائي** عبر GitHub Actions عند كل Push
+- 🎨 **Modern dark "Deep Space" theme** with Galaxy / iPhone-inspired aurora colors
+- 🌙 **Dark / Light mode** with automatic visitor preference saving
+- ⌨️ **Dynamic typing effect** for role headlines
+- 📊 **Animated counters** and smooth scroll-reveal animations
+- 📱 **100% responsive** — flawless on mobile, tablet, and desktop
+- 🚀 **Zero heavy libraries** — pure HTML, CSS & JS for blazing-fast loading
+- 🧩 **Central config** — edit your name and links from a single place (`js/main.js`)
+- 🔄 **Auto deployment** via GitHub Actions on every push
 
-## 🗂️ هيكل المشروع
+## 🗂️ Project Structure
 
 ```
 maged-portfolio/
-├── index.html              # الصفحة الرئيسية
+├── index.html              # Main page
 ├── css/
-│   └── style.css           # التنسيقات (ألوان، حركات، استجابة)
+│   └── style.css           # Styles (colors, animations, responsiveness)
 ├── js/
-│   └── main.js             # الإعدادات المركزية + التفاعلات
+│   └── main.js             # Central config + interactions
 ├── .github/
 │   └── workflows/
-│       └── deploy-pages.yml  # سير عمل النشر التلقائي
-├── LICENSE                 # رخصة MIT
-└── README.md               # هذا الملف
+│       └── deploy-pages.yml  # Auto-deploy workflow
+├── LICENSE                 # MIT License
+└── README.md               # This file
 ```
 
-## 🛠️ تخصيص المحتوى
+## 🛠️ Customization
 
-كل بياناتك في مكان واحد — افتح `js/main.js` وعدّل كائن `SITE_CONFIG`:
+All your data lives in one place — open `js/main.js` and edit the `SITE_CONFIG` object:
 
 ```js
 const SITE_CONFIG = {
-  brand: "موقعي",              // اسم الموقع في الشعار
-  name: "Maged Morshed",      // اسمك
-  roles: ["مطوّر واجهات..."],  // ← مسمياتك المهنية
-  email: "you@example.com",    // ← بريدك
-  socials: { github: "...", linkedin: "..." },  // ← روابطك
+  brand: "Maged Morshed",      // Site logo text
+  name: "Maged Morshed",       // ← Your full name
+  roles: ["Frontend Developer"], // ← Your roles (typing effect)
+  email: "you@example.com",    // ← Your email
+  socials: { github: "...", linkedin: "..." },  // ← Your links
 };
 ```
 
-لتعديل النصوص والمشاريع: افتح `index.html` وابحث عن القسم المطلوب
-(`عنّي` / `مهاراتي` / `أعمالي` / `تواصل معي`).
+Empty values automatically hide their cards — the site only shows real data.
 
-لتغيير الألوان: عدّل متغيرات `:root` في أعلى `css/style.css`.
+To edit sections, open `index.html` and find the section you want
+(`About` / `Skills` / `Projects` / `Contact`).
 
-## 🚀 النشر
+To change colors, edit the `:root` variables at the top of `css/style.css`.
 
-الموقع يُنشر تلقائيًا عبر **GitHub Pages**:
+## 🚀 Deployment
 
-1. اذهب إلى **Settings ← Pages** في المستودع
-2. اختر المصدر: **GitHub Actions**
-3. كل تحديث للفرع `main` سيُنشر فورًا على:
-   `https://USERNAME.github.io/maged-portfolio/`
+The site deploys automatically via **GitHub Pages**:
 
-## 🖥️ التشغيل محليًا
+1. Go to **Settings ← Pages** in the repository
+2. Source: **GitHub Actions**
+3. Every push to `main` deploys instantly to:
+   `https://magedmorshed173-ai.github.io/maged-portfolio/`
+
+## 🖥️ Run Locally
 
 ```bash
-# افتح الملف مباشرة في المتصفح
+# Open directly in your browser
 open index.html
 
-# أو شغّل سيرفر محلي (اختياري)
+# Or run a local server (optional)
 python3 -m http.server 8000
-# ثم افتح http://localhost:8000
+# then visit http://localhost:8000
 ```
 
-## 📄 الرخصة
+## 📄 License
 
-هذا المشروع مرخّص تحت رخصة [MIT](LICENSE) — يمكنك استخدامه وتعديله بحرية.
+Released under the [MIT License](LICENSE) — free to use and modify.
 
 ---
 
-<p align="center">صُنع بـ ❤️ — آثار ومراجعاتك مرحّب بها دائمًا</p>
+<p align="center">Made with ❤️ — feedback and stars are always welcome</p>
