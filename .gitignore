@@ -1,0 +1,20 @@
+# نظام التشغيل والملفات المؤقتة
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ملفات المحررات
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ملفات السجلات والمؤقتات
+*.log
+*.tmp
+.cache/
+
+# البيئات (لا نستخدمها الآن، احتياطًا)
+.env
+.env.local
+node_modules/
